@@ -236,6 +236,7 @@ states/walk/position = Vector2(509, 100)
 transitions = ["walk", "idle", SubResource("AnimationNodeStateMachineTransition_6r7eh"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_3i7w0"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_v2oaj")]
 
 [node name="Male_character" type="CharacterBody2D"]
+skew = 0.00872665
 script = ExtResource("1_3eiwy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
