@@ -1,0 +1,136 @@
+[gd_scene load_steps=8 format=3 uid="uid://b7bhlq24whd5i"]
+
+[ext_resource type="Texture2D" uid="uid://60iahw7s2v8i" path="res://Mainmenu_Scene/Mainmenu_Asset/2-7.png" id="1_mxk1q"]
+[ext_resource type="Script" uid="uid://b3umnlryfw317" path="res://Mainmenu_Scene/mainmenu.gd" id="1_q3kb3"]
+[ext_resource type="FontFile" uid="uid://ba2cx4m3lmf0i" path="res://Mainmenu_Scene/Mainmenu_Asset/GrapeSoda.ttf" id="2_q3kb3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mxk1q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxk1q"]
+bg_color = Color(0.733005, 0.733005, 0.733005, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.305882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3kb3"]
+bg_color = Color(0.517184, 0.517184, 0.517184, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.305882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f5wqp"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.305882)
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
+
+[node name="Mainmenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q3kb3")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(599, 327)
+scale = Vector2(2.86768, 2.0075)
+texture = ExtResource("1_mxk1q")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -356.0
+offset_top = -170.0
+offset_right = 353.0
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.670588)
+theme_override_constants/shadow_offset_y = 5
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("2_q3kb3")
+theme_override_font_sizes/font_size = 180
+text = "NSC PROJ."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -550.0
+offset_top = -98.0
+offset_right = 550.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 25
+
+[node name="Start" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mxk1q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxk1q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q3kb3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_f5wqp")
+text = "Start"
+
+[node name="Option" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mxk1q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxk1q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q3kb3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_f5wqp")
+text = "Option"
+
+[node name="Quit" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mxk1q")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxk1q")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q3kb3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_f5wqp")
+text = "Quit"
+
+[connection signal="pressed" from="HBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="HBoxContainer/Option" to="." method="_on_Option_pressed"]
+[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_Quit_pressed"]

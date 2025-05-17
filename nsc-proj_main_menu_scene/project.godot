@@ -1,0 +1,20 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="NSC proj_Main_Menu_Scene"
+run/main_scene="uid://b7bhlq24whd5i"
+config/features=PackedStringArray("4.4", "Mobile")
+config/icon="res://Mainmenu_Scene/icon.svg"
+
+[rendering]
+
+renderer/rendering_method="mobile"

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cratxytptdopf"]
+
+[ext_resource type="Texture2D" uid="uid://dx7itlejbi7v2" path="res://Start Scene(Test)/Start_Asset/2-7(start).png" id="1_4lpkc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j3xfj"]
+texture = ExtResource("1_4lpkc")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 1165.0
+offset_bottom = 662.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_j3xfj")
